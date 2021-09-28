@@ -1,15 +1,15 @@
-const initialAmount = document.querySelector("#initialamount");
+const initialAmount = document.querySelector("#initial-amount");
 const quantity = document.querySelector("#quantity");
-const currentAmount = document.querySelector("#currentamount");
+const currentAmount = document.querySelector("#current-amount");
 const checkBtn = document.querySelector("#button");
 const outPut = document.querySelector("#output");
 
 function profitLossCalculation(initial, quantity, current) {
   if (initial > current) {
     var loss = (initial - current) * quantity;
-    var losspercentage = (loss / initial) * 100;
+    var lossPercentage = (loss / initial) * 100;
     outputFunction(
-      `Hey it is loss of ${loss.toFixed(2)} and of ${losspercentage.toFixed(
+      `Hey it is loss of ${loss.toFixed(2)} and of ${lossPercentage.toFixed(
         2
       )}% loss ☹️`
     );
@@ -37,7 +37,6 @@ function clickHandler() {
   ) {
     alert("Enter all the values");
   } else {
-    console.log(initialAmount.valu);
     var iA = Number(initialAmount.value);
     var qty = Number(quantity.value);
     var cA = Number(currentAmount.value);
