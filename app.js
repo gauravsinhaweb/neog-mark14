@@ -8,8 +8,6 @@ function profitLossCalculation(initial, quantity, current) {
   if (initial > current) {
     var loss = (initial - current) * quantity;
     var losspercentage = (loss / initial) * 100;
-    outPut.style.backgroundColor = "black";
-    outPut.style.color = "red";
     outputFunction(
       `Hey it is loss of ${loss.toFixed(2)} and of ${losspercentage.toFixed(
         2
@@ -17,16 +15,14 @@ function profitLossCalculation(initial, quantity, current) {
     );
   } else if (current > initial) {
     var profit = (current - initial) * quantity;
-    var profitPersentage = (profit / initial) * 100;
-    outPut.style.backgroundColor = "white";
-    outPut.style.color = "green";
+    var profitPercentage = (profit / initial) * 100;
+
     outputFunction(
       `Hey it is profit of ${profit.toFixed(
         2
-      )} and of ${profitPersentage.toFixed(2)}% profit 🎉`
+      )} and of ${profitPercentage.toFixed(2)}% profit 🎉`
     );
   } else {
-    outPut.style.color = "black";
     outputFunction("No Loss and No Gain!! ");
   }
 }

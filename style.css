@@ -1,54 +1,73 @@
 body {
-  background-color: white;
+  margin: 0;
+  font-size: 22px;
 }
-.head {
-  text-align: center;
-  color: white;
-  font-size: larger;
+:root {
+  --primary: #3b82f6;
+  --secondary: #fafafa;
 }
-.container {
-  height: 52%;
-  width: 50%;
-  text-align: center;
-  margin: auto;
-  margin-top: 2%;
-  position: fixed;
-  overflow: visible;
-  overflow-x: hidden;
-  left: 0;
-  border: solid black;
-  background-color: rgb(218, 151, 151);
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
 }
-label {
-  display: block;
-  font-size: large;
-  margin: 0.5rem;
-  width: auto;
+div {
+  margin: 1rem;
 }
 input {
-  width: 30%;
-  padding: 0.25rem;
   margin: 1rem;
+  height: 4vh;
+  border: 0.5px solid var(--primary);
+  padding: 1rem;
+  border-radius: 5px;
 }
-#button {
-  width: auto;
-  margin: 1rem;
-  padding: 0.45rem;
+label {
+  text-transform: capitalize;
+  opacity: 0.7;
+}
+h1 {
+  text-transform: capitalize;
+  color: var(--primary);
+}
+h2 {
+  opacity: 0.5;
+}
+h4 {
+  margin-bottom: 8rem;
+  opacity: 0.5;
+}
+button {
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  padding: 0.5rem;
+  width: 10rem;
 }
 #output {
-  position: absolute;
-  height: 52%;
-  width: 50%;
-  overflow-x: hidden;
-  margin-top: 2%;
-  border: solid black;
-  position: fixed;
-  right: 0;
-  text-align: center;
-  font-size: xx-large;
-  background-color: rgb(138, 62, 62);
-  color: white;
+  font-size: 30px;
+  text-transform: capitalize;
+  background-color: var(--primary);
+  color: black;
+}
+nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+  border: none;
+  height: 10vh;
+  border-radius: 0 0 16px 16px;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+a {
+  color: var(--secondary);
+
+  text-decoration: none;
+  margin: 0 2rem;
+  font-size: 22px;
 }
